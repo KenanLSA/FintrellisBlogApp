@@ -1,0 +1,62 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family:  Avenir, system-ui, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 450px;
+  position: relative;
+}
+
+body {
+  padding: 3rem 2rem;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+form { 
+  gap: 1em;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 35%;
+  height: 40%;
+
+  &, .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: .2em;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+}

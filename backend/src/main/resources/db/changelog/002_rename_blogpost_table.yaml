@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: rename_blogpost_table
+      author: Kenan
+      changes:
+        - renameTable:
+            oldTableName: blogpostentity
+            newTableName: blog_posts

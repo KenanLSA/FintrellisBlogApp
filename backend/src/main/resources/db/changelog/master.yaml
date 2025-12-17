@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include: 
+      file: db/changelog/001_init.yaml
+  - include:
+      file: db/changelog/002_rename_blogpost_table.yaml

@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 'initial changeset'
+      author: 'Kenan'
+      changes:
+        - createTable:
+            tableName: blogpostentity
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: title
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: content
+                  type: VARCHAR(1000)
+                  constraints:
+                    nullable: false
